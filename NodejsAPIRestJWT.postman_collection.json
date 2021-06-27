@@ -1,0 +1,471 @@
+{
+	"id": "26fdd17b-4d11-9296-21ab-b3296148049f",
+	"name": "NodejsAPIRestJWT",
+	"description": "",
+	"order": [
+		"401c4f79-42b3-157f-6b2b-33f310d0c58c",
+		"931cf18f-bbb7-c8f0-286b-98b154ab18ea",
+		"364ebc7a-3d25-eaf9-836e-02ae9da8f43d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1623953644443,
+	"owner": "6913678",
+	"public": false,
+	"requests": [
+		{
+			"id": "364ebc7a-3d25-eaf9-836e-02ae9da8f43d",
+			"headers": "Content-Type: application/json\nauth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRvbmlzIiwiaWQiOiI2MGQ2ODdmNDc0OGUwODFjZWMzZjViZDYiLCJpYXQiOjE2MjQ4MDI2Mjd9.G-2MeBb7QNSEnHZvhTlZ0ABodZXS8wLFjjr_ps-zr5Q\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRvbmlzIiwiaWQiOiI2MGQ2ODdmNDc0OGUwODFjZWMzZjViZDYiLCJpYXQiOjE2MjQ4MDI2Mjd9.G-2MeBb7QNSEnHZvhTlZ0ABodZXS8wLFjjr_ps-zr5Q",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{localnodejs}}/api/admin/dashboard",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1624802923387,
+			"name": "Admin",
+			"description": "",
+			"collectionId": "26fdd17b-4d11-9296-21ab-b3296148049f",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 401,
+						"name": "Unauthorized",
+						"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+					},
+					"time": 65,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "42",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 14:06:47 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"2a-YInSN5oV+lkzV2b+m8jixePHGeI\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"error\":true,\"message\":\"Acceso denegado\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Error",
+					"id": "48c04ba0-e6c9-735b-e79e-86da24bc0727",
+					"request": {
+						"url": "{{localnodejs}}/api/admin/dashboard",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRvbmlzIiwiaWQiOiI2MGQ2ODdmNDc0OGUwODFjZWMzZjViZDYiLCJpYXQiOjE2MjQ4MDI2Mjd9.G-2MeBb7QNSEnHZvhTlZ0ABodZXS8wLFjjr_ps-zr5Q",
+								"description": "",
+								"enabled": false,
+								"warning": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n//auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRvbmlzIiwiaWQiOiI2MGQ2ODdmNDc0OGUwODFjZWMzZjViZDYiLCJpYXQiOjE2MjQ4MDI2Mjd9.G-2MeBb7QNSEnHZvhTlZ0ABodZXS8wLFjjr_ps-zr5Q\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 44,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "125",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 14:07:49 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"7d-NnYhSAPlfpR0DA+awLM7+5+itv8\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"error\":false,\"data\":{\"tile\":\"mi ruta protegida\",\"user\":{\"name\":\"Adonis\",\"id\":\"60d687f4748e081cec3f5bd6\",\"iat\":1624802627}}}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Exito",
+					"id": "2e56462c-a83d-b073-cb58-0270e95a4049",
+					"request": {
+						"url": "{{localnodejs}}/api/admin/dashboard",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							},
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRvbmlzIiwiaWQiOiI2MGQ2ODdmNDc0OGUwODFjZWMzZjViZDYiLCJpYXQiOjE2MjQ4MDI2Mjd9.G-2MeBb7QNSEnHZvhTlZ0ABodZXS8wLFjjr_ps-zr5Q",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Content-Type: application/json\nauth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRvbmlzIiwiaWQiOiI2MGQ2ODdmNDc0OGUwODFjZWMzZjViZDYiLCJpYXQiOjE2MjQ4MDI2Mjd9.G-2MeBb7QNSEnHZvhTlZ0ABodZXS8wLFjjr_ps-zr5Q\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "401c4f79-42b3-157f-6b2b-33f310d0c58c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{localnodejs}}/api/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1624765887934,
+			"name": "registro",
+			"description": "",
+			"collectionId": "26fdd17b-4d11-9296-21ab-b3296148049f",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"Adonis\",\n\t\"email\":\"ranndy360@gmail.com\",\n\t\"password\":\"123456789\"\n}"
+		},
+		{
+			"id": "931cf18f-bbb7-c8f0-286b-98b154ab18ea",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{localnodejs}}/api/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1624802654497,
+			"name": "Login",
+			"description": "",
+			"collectionId": "26fdd17b-4d11-9296-21ab-b3296148049f",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 180,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "39",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 04:00:55 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"27-QOZRwPHxl9KjAO6SZ+SNV4K4sPE\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"error\":false,\"message\":\"Bienvenido!\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "{{localnodejs}}/api/login",
+					"id": "6267cb97-8f12-e847-efd3-2a98e36f81d1",
+					"request": {
+						"url": "{{localnodejs}}/api/login",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\n\t\"email\": \"ranndy360@gmail.com\",\n\t\"password\": \"123456789\"\n}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 866,
+					"headers": [
+						{
+							"name": "auth-token",
+							"key": "auth-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRvbmlzIiwiaWQiOiI2MGQ2ODdmNDc0OGUwODFjZWMzZjViZDYiLCJpYXQiOjE2MjQ4MDI2Mjd9.G-2MeBb7QNSEnHZvhTlZ0ABodZXS8wLFjjr_ps-zr5Q",
+							"description": "Custom header"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "204",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 14:03:47 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"cc-qevAxFtKWzAfgK/K87ePhrW8nqw\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"error\":false,\"data\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRvbmlzIiwiaWQiOiI2MGQ2ODdmNDc0OGUwODFjZWMzZjViZDYiLCJpYXQiOjE2MjQ4MDI2Mjd9.G-2MeBb7QNSEnHZvhTlZ0ABodZXS8wLFjjr_ps-zr5Q\"}}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Login",
+					"id": "b09b8c45-7914-c043-12e2-565216724444",
+					"request": {
+						"url": "{{localnodejs}}/api/login",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\n\t\"email\":\"ranndy360@gmail.com\",\n\t\"password\": \"123456789\"\n}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			]
+		}
+	]
+}
