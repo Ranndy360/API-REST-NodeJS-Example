@@ -1,0 +1,35 @@
+{
+  "name": "API-REST-NodeJS-Example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",  
+  "author": {
+    "name": "Randy Letona",
+    "url": "https://www.linkedin.com/in/ranndy360"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ranndy360/API-REST-NodeJS-Example.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ranndy360/API-REST-NodeJS-Example/issues"
+  },
+  "homepage": "https://github.com/Ranndy360/API-REST-NodeJS-Example#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.2"
+  }
+}
