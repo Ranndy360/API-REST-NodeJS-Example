@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-router.get('/dashboard',async(req, res) => {  
+router.get('/transfer/list',async(req, res) => {  
         
     res.json({
         error: false,

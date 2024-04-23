@@ -1,21 +1,34 @@
-# API-REST-NodeJS-Example
+# API-REST-NodeJS
 Basic example for a backend api with JWT validation and middleware.
 Simple Auth managment
 
 # Depedencies
 
     * @hapi/joi
-    Validaciones de campos req
+    To valid inputs for http
     * bcryptjs
-    Encriptar credenciales
+    Encrypt credencials
     * body-parser
-    Para parsear las peticiones http
+    Parse http request
     * cors
+    CORS header validations
+    * sentry
+    Manage log error with sentry
     * dotenv
-    Usar variables de entorno .env - separar ambientes
+    Use env file to manage enviroment values
     * express
-    Manejo de peticiones htttp
+    Http managment
     * jsonwebtoken
-    Generar token con JWT
-    * mongoose
-    Conectar con mongoDB
+    Generate token with JWT
+    * Axios
+    Http client to request 
+
+# Structure
+    * config
+    File to get env values
+    * models
+    Models of data tables or collections of data
+    * routes
+    Split validation routes
+    * utils
+    Middleware for validation and different files utils
